@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <title>{% block title%}{% endblock %} | KeHorario</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+              KeHorario
+            </div>
+            <div class="menu">
+              <a href="{% url 'index' %}" class="link">
+                <div class="title">Inicio</div>
+                <div class="bar"></div>
+              </a>
+              <a href="#" class="link">
+                <div class="title">Menu</div>
+                <div class="bar"></div>
+              </a>
+            </div>
+        </div>
+        <div class="layout">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
