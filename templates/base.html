@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+        <script src="{% static 'javascript/javascript.js' %}"></script>   
         <title>{% block title%}{% endblock %} | KeHorario</title>
     </head>
     <body>
@@ -18,8 +20,8 @@
                 <div class="title">Inicio</div>
                 <div class="bar"></div>
               </a>
-              <a href="#" class="link">
-                <div class="title">Menu</div>
+              <a href="{% url 'simulator' %}" class="link">
+                <div class="title">Simulador</div>
                 <div class="bar"></div>
               </a>
             </div>

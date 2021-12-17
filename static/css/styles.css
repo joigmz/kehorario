@@ -50,3 +50,57 @@
     margin: 0px 5% 0px 5%;
     font-family: 'Roboto Mono', monospace;
   }
+
+.box-calendar{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.calendar{
+  width: 800px;
+}
+
+.calendar-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.day{
+  text-align: center;
+  font-weight: 600;
+  font-size: xx-large;
+}
+.day-grid{
+  display: grid;
+  grid-template-rows: repeat(8,1fr);
+}
+
+.signature{
+  font-weight: 600;
+  font-size: xx-large;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2.5px;
+  height: 30pt;
+}
+
+.signatureActive{
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 1px, rgb(31, 193, 27) 0px 0px 0px 2px, rgb(255, 217, 19) 0px 0px 0px 3px, rgb(255, 156, 85) 0px 0px 0px 4px, rgb(255, 85, 85) 0px 0px 0px 5px;
+  background-color: rgba(172, 111, 233, 0.35);
+  
+  /*Arreglar con un addClass*/
+  font-weight: 600;
+  font-size: xx-large;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2.5px;
+  cursor: pointer;
+}
+
+.signature:hover{
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 1px, rgb(31, 193, 27) 0px 0px 0px 2px, rgb(255, 217, 19) 0px 0px 0px 3px, rgb(255, 156, 85) 0px 0px 0px 4px, rgb(255, 85, 85) 0px 0px 0px 5px;
+  cursor: pointer;
+}
