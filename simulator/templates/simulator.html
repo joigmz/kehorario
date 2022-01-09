@@ -5,79 +5,18 @@
 
 {% block content %}
 
-<h1>Simulador</h1>
-<p>Hola, (usuario) selecciona haciendo click sobre las casillas, para que nuestro algoritmo pueda calcular un horario similar</p>
+<h1>¿Como te gustaría trabajar esta semana?</h1>
+
 <div class="box-calendar">
-    <div class="calendar">
-        <div class="calendar-grid">
-            <div class="day">
-                Lunes
-                <div class="day-grid">
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                </div>
-            </div>
-            <div class="day">
-                Martes
-                <div class="day-grid">
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                </div>
-            </div>
-            <div class="day">
-                Miercoles
-                <div class="day-grid">
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                </div>
-            </div>
-            <div class="day">
-                Jueves
-                <div class="day-grid">
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                </div>
-            </div>
-            <div class="day">
-                Viernes
-                <div class="day-grid">
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                    <div class="signature"></div>
-                </div>
-            </div>
+    <form method='post'>
+        {% csrf_token %}
+        {{ form }}
+        <div class="box-submit">
+            <input type='submit' value='submit' class="bn3">
         </div>
-    </div>
+    </form>
 </div>
+
 <form method="post">
     
 
