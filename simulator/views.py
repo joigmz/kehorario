@@ -2,6 +2,10 @@ from django.shortcuts import render
 from .forms import *
 # Create your views here.
 
+def sigin(request):
+
+    return render(request, "sigin.html")
+
 def simulator(request):
 
     if request.method == 'POST':

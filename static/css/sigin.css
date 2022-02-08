@@ -1,0 +1,74 @@
+.page-box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-sigin{
+    width: 500px;
+    position: absolute;
+    border-radius: 2vw;
+    padding-bottom: 5vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.welcome{
+    text-align: center;
+}
+
+.text-input-box{
+    margin: 0rem 1rem 1.5rem 1rem;
+}
+.sub-title{
+    margin: 8px;
+}
+.custom-input{
+    width: 100%;
+    padding: 8px;
+    margin: 1px;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 10px;
+}
+
+
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+
+.action-button{
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.action-button:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bg-google{
+    background-color: rgb(219, 68, 55);
+    color: white;
+}
+.separator-container{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.separator-line{
+    width: 50%;
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0px 1em 0px 1em; 
+}
+
+.or-separator{
+    margin: 0px 1em 0px 1em;
+}

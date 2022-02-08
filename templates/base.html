@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        {% block css %}{% endblock %}
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
         <script src="{% static 'javascript/javascript.js' %}"></script>   
         <title>{% block title%}{% endblock %} | KeHorario</title>
