@@ -1,0 +1,38 @@
+{% load static %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="page-box">
+    <div class="box-sigin">
+        <div class="welcome">
+            <p>Que bueno verte de nuevo en <b>KeHorario 🗓️</b></p>
+        </div>
+        <div class="text-input-box">
+            <p class="sub-title">Correo 📬</p>
+            <input type="email" class="custom-input" placeholder="tucorreo@ejemplo.com">
+        </div>
+        <div class="text-input-box">
+            <p class="sub-title">Clave 🔑</p>
+            <input type="password" class="custom-input" placeholder="Clave">
+        </div>
+        <div class="button-box">
+            <button type="submit" class="action-button">Entrar</button>
+        </div>
+        <div class="separator-container">
+            <hr class="separator-line"><p class="or-separator">o</p><hr class="separator-line">
+        </div>
+        <div class="button-box">
+            <button type="submit" class="action-button bg-google">Entrar con Google</button>
+        </div>
+        <div class="question-count">
+            ¿No tienes cuenta?👉🏼<a href="{% url 'signin' %}">Creala por aqui</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

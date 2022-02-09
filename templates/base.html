@@ -5,30 +5,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--========== CSS ==========-->
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% block css %}{% endblock %}
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
         <script src="{% static 'javascript/javascript.js' %}"></script>   
         <title>{% block title%}{% endblock %} | KeHorario</title>
     </head>
     <body>
-        <div class="header">
-            <div class="logo">
-              KeHorario
-            </div>
-            <div class="menu">
-              <a href="{% url 'index' %}" class="link">
-                <div class="title">Inicio</div>
-                <div class="bar"></div>
-              </a>
-              <a href="{% url 'simulator' %}" class="link">
-                <div class="title">Simulador</div>
-                <div class="bar"></div>
-              </a>
-            </div>
+      <div class="navbar">
+        <div class="logo-box">
+          <div class="startup-name">
+            <p><b>KeHorario</b></p>
+          </div>
+          <div class="logo">🗓️</div>
         </div>
-        <div class="layout">
-            {% block content %}{% endblock %}
+        <div class="action-buttons-box">
+          <div class="action-button bg-login">
+            <a href="{% url 'login' %}" class="action-button-link">Entrar</a>
+          </div>
+          <div class="action-button bg-signin">
+            <a href="{% url 'signin' %}" class="action-button-link">Registrarse</a>
+          </div>
         </div>
+      </div>
+    {% block content %}{% endblock %}
     </body>
 </html>

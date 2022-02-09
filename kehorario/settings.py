@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'main',
-    'simulator'
+    'crm'
 ]
 
 MIDDLEWARE = [
@@ -62,7 +62,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR,'templates'),
             os.path.join(BASE_DIR,'main/templates'),
-            os.path.join(BASE_DIR,'simulator/templates')
+            os.path.join(BASE_DIR,'crm/templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -4,3 +4,53 @@ body{
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
 }
+
+.navbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    padding: 0px 1em 0px 1em;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+}
+
+.startup-name{
+    font-size: large;
+}
+
+.logo{
+    margin: 0px 1px 0px 1px;
+    font-size:xx-large;
+}
+
+.action-buttons-box{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.action-button{
+    margin: 0px 5px 0px 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.action-button-link{
+    color: white;
+    text-decoration: none;
+}
+.action-button:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bg-login{
+    background-color: rgb(23, 156, 82);
+}
+
+.bg-signin{
+    background-color: rgb(59, 89, 152);
+}

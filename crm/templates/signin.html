@@ -1,7 +1,7 @@
 {% load static %}
 
 {% block css%}
-<link rel="stylesheet" href="{% static 'css/sigin.css' %}">
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% endblock %}
 
@@ -27,9 +27,11 @@
         <div class="separator-container">
             <hr class="separator-line"><p class="or-separator">o</p><hr class="separator-line">
         </div>
-
         <div class="button-box">
             <button type="submit" class="action-button bg-google">Registrarse con Google</button>
+        </div>
+        <div class="question-count">
+            ¿Ya tienes cuenta?👉🏼<a href="{% url 'login' %}">Ingresa por aqui</a>
         </div>
     </div>
 </div>
