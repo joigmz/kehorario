@@ -1,10 +1,47 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
 
-<h1>hola mundo</h1>
+<div class="main-box">
+    <div class="main-title">
+        <h1>Automatiza y centraliza 🎯 tu información</h1>
+    </div>
+    
+    <div class="img-and-description-box">
+        <div class="description-main">
+            <p>En <b>Kehorario</b>🗓️ tus flujos de datos van a despegar 🚀 y aterrizar
+             donde tu quieras 🏡, centralizando tu información en un solo lugar, automatizando y
+            enlazando cada parte de tu compañia desde el nivel más alto al más bajo de tu
+            información.</p>
+        </div>
+        <hr style="margin: 2vw; background-color: #ccc; border: none; height: 1px;">
+        <div class="integrations">
+            <div class="integrations-desciption-box">
+                <h2 class="main-subtitle">Nuestras integraciones 🖇️</h2>
+                <p class="integrations-desciption">
+                    Sincronice las respuestas con las Hojas de cálculo de Google. 
+                    Haz ping a las personas en Slack cuando alguien complete tu encuesta. 
+                    Siéntese y observe cómo fluye su trabajo.
+                </p>
+            </div>
+            <div class="img-layout">
+                <div class="box-imgs">
+                    <img src="{% static 'img/Google_Sheets.max-2800x2800.png' %}" alt="Google_Sheets" class="tech-associate-img">
+                </div>
+                <div class="box-imgs">
+                    <img src="{% static 'img/2560px-MongoDB_Logo.png' %}" alt="Google_Sheets" class="tech-associate-img">
+                    <img src="{% static 'img/800px-Postgresql_elephant.png' %}" alt="Google_Sheets" class="tech-associate-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

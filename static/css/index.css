@@ -1,0 +1,41 @@
+.main-box{
+    padding-top: 1px;
+}
+.main-title{
+    text-align: center;
+}
+.main-subtitle{
+    text-align: center;
+    margin-top: 48px;
+}
+.img-and-description-box{
+    align-items: center;
+    padding: 24px 0px 24px 0px;
+}
+.description-main{
+    margin: 0 10vw 0 10vw;
+}
+
+.integrations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.integrations-desciption{
+    padding: 0 20% 0 20%;
+}
+
+.img-layout{
+    display: grid;
+}
+.box-imgs{
+    display: flex;
+    justify-content: center;
+}
+.tech-associate-img{
+    height: 5vh;
+    padding: 24px;
+    margin: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    background: white;
+}
