@@ -13,6 +13,25 @@
     </head>
     <body>
       <div class="navbar">
+        <div class="burger" onclick="openNav()";>
+          <div class="tomato"></div>
+          <div class="tomato"></div>
+          <div class="tomato"></div>
+        </div>
+
+        <div class="side-bar-mode">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="action-button bg-signin register-side">
+              <a href="{% url 'signin' %}" class="action-button-link">Registrarse</a>
+            </div>
+            <a href="#">Integraciones</a>
+            <a href="#">Precios</a>
+          </div>
+          <div id="wrapper" class="wrapper">
+          </div>
+        </div>
+
         <div class="logo-box">
           <div class="startup-name">
             <p><b>KeHorario</b></p>
