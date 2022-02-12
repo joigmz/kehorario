@@ -131,7 +131,9 @@ body{
   }
   
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+  @media screen and (max-width: 768px) {
     .sidenav a {font-size: 18px;}
+    .action-buttons-box{
+        display: none;
+    }
   }

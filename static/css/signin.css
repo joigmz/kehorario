@@ -9,12 +9,14 @@
     align-items: center;
     justify-content: center;
 }
+
 .box-sigin{
     width: 500px;
     position: absolute;
     border-radius: 2vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+    display: flex;
+    justify-content: center;
 }
 
 .welcome{
@@ -28,7 +30,7 @@
     margin: 8px;
 }
 .custom-input{
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin: 1px;
     border: none;
@@ -83,3 +85,15 @@
     font-size: small;
     color: rgba(100, 100, 111);
 }
+
+@media screen and (max-width: 768px) {
+    .box-sigin{
+        width: 90vw;
+        height: 70vh;
+        padding: 10px;
+        font-size: x-large;
+    }
+    .or-separator{
+        font-size: medium;
+    }
+  }

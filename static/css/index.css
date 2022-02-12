@@ -39,3 +39,23 @@
     border-radius: 5px;
     background: white;
 }
+
+@media screen and (max-width: 768px) {
+    .box-imgs{
+        display: block;
+    }
+    .integrations{
+        display: block;
+    }
+    .img-layout{
+        display: block;
+    }
+    .box-imgs {
+        display: flex;
+    }
+    .tech-associate-img{
+        height: 4vh;
+        padding: 10px;
+        margin: 10px;
+    }
+  }
