@@ -114,6 +114,15 @@ body{
     text-align: center;
     padding: 0;
   }
+  .login-side{
+    width: 85%;
+    margin: auto;
+  }
+  .login-side a {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+  }
   .register-side a:hover {
     color: #ffffff;
   }
@@ -130,7 +139,10 @@ body{
     margin-left: 50px;
   }
   
-
+.box-login-sidevar{
+    height: 100%;
+    display: flex;
+}
   @media screen and (max-width: 768px) {
     .sidenav a {font-size: 18px;}
     .action-buttons-box{
